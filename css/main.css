@@ -140,6 +140,7 @@
     }
 
 /* ABOUT Section */
+
   .aboutContainer {
     height: 80vh;
     display: flex;
@@ -173,10 +174,17 @@
     width: 60vw;
     position: relative;
   }
+  .AboutDescription h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #ED1C24;
+    padding: 10px 0;
+  }
   .AboutDescription h2 {
     text-align: left;
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     color: #F7941E;
+    padding: 10px 0;
   }
   .AboutDescription p {
     text-align: justify;
@@ -187,7 +195,7 @@
     right: 0;
     left: 0;
   }
-  @media screen and (max-width: 764px) { /*when screen get bigger than 764px*/
+  @media screen and (max-width: 964px) { /*when screen get bigger than 764px*/
     .aboutContainer {
       height: auto;
       flex-direction: column;
@@ -200,11 +208,23 @@
       margin: 20px;
       width: 100%;
     }
+    .AboutDescription h1 {
+      text-align: center;
+      padding: 20px 0 0 0;
+    }
     .AboutDescription h2 {
       text-align: center;
+      padding: 10px 0;
     }
   }
-
+@media screen and (max-width: 500px) {
+  .AboutDescription h1 {
+    font-size: 2rem;
+  }
+  .AboutDescription h2 {
+    font-size: 1rem;
+  }
+}
 /* PROJECTS Section */
   /* Grid of projects */
       /* Grid: sizes: 4 - 2x2 - 1x4  */

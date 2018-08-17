@@ -21,6 +21,10 @@ Skills include HTML, CSS, Javascript, Adobe Creative Cloud software such as illu
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sections.css">
+    <style>
+    #webgl { width: 100vw; height: 100vh; cursor: grab;}
+    #webgl:active { width: 100vw; height: 100vh; cursor: grabbing;}
+    </style>
   <!-- Scripts -->
     <!-- JQUERY -->
     <script src="js/jquery.min.js"></script>
@@ -80,14 +84,9 @@ Skills include HTML, CSS, Javascript, Adobe Creative Cloud software such as illu
 
   <!-- Home Section 100% of the page -->
   <section id="home">
-      <!-- Logo -->
+      <!-- Logo imported with THREE.js-->
+      <div id="webgl"></div>
 
-    <iframe class="LogoAnimation" src="logo/logo Animation AE.html" name="FMLogo"></iframe>
-      <!-- Title -->
-    <div class="HomeTitle">
-      <h1>Fabrizio Marras</h1>
-      <h2>designer & developer</h2>
-    </div>
       <!-- Navigation buttons -->
     <nav class="nav-flex">
       <a class="flex-btn" href="#about" title="About">about</a>
@@ -97,13 +96,13 @@ Skills include HTML, CSS, Javascript, Adobe Creative Cloud software such as illu
   </section>
   <!-- About Section (100% of the page?) -->
   <section id="about">
-      <!-- <h1 class="title"> ABOUT </h1> -->
     <div class="aboutContainer">
       <!-- Photo -->
       <div class="AboutImg" alt="Fabrizio Marras"></div>
       <!-- Description -->
       <div class="AboutDescription">
-        <h2>Front-end developer, designer and motion graphics artist</h2>
+        <h1>Fabrizio Marras</h1>
+        <h2>Designer, Developer and motion graphics artist</h2>
         <p>I design digital content including full websites, logos, banners, animated 2D and 3D content. I love to code and I am interested in combining my background in chemistry with everything related to graphics, VR and AR technology.</p>
         <p>My skills include HTML, CSS, Javascript, Adobe Creative Cloud software  such as Illustrator, Photoshop, After Effects, and 3D software such as Cinema 4D and Maya.</p>
         <!-- Resume Button -->
@@ -419,5 +418,14 @@ Skills include HTML, CSS, Javascript, Adobe Creative Cloud software such as illu
 
 
   </script>
+  <!-- THREE JS -->
+    <script src="js/dat.gui.min.js"></script> <!-- Allows controls in the browser window to control features of the 3D graphic. -->
+		<script src="three.js-master/build/three.min.js"></script>
+		<script src="three.js-master/examples/js/loaders/LoaderSupport.js"></script> <!-- needed with OBJLoader2.js -->
+		<script src="three.js-master/examples/js/loaders/OBJLoader.js"></script>
+		<script src="three.js-master/examples/js/loaders/OBJLoader2.js"></script>
+		<script src="three.js-master/examples/js/loaders/MTLLoader.js"></script><!-- Allows to upload an external 3D file to the ThreeJS scene. -->
+		<script src="three.js-master/examples/js/controls/OrbitControls.js"></script><!-- Allows to orbit the camera around the object in the browser window by dragging. -->
+		<script src="js/main.js"></script>
 </body>
 </html>
