@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href="favicon.ico">
+
+    <meta charset="UTF-8">
+  <!-- device recognition -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- browser bar title -->
+    <title>HOME | Fabrizio Marras</title>
+  <!-- // Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Quicksand" rel="stylesheet">
+  <!-- // CSS files -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+  <!-- Scripts -->
+    <!-- JQUERY -->
+    <script src="js/jquery.min.js"></script>
+    <!-- // Icon Font Library -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Header including menu -->
+  <header>
+    <div id="menu" class="header show">
+      <!-- Logo + Name -->
+      <div class="logo">
+        <!-- embedded an html page containing the animated logo from Edge Animate -->
+        <div class="logo-an">
+          <iframe src="logo/logo Animation AE.html" name="FMLogo"></iframe>
+        </div>
+        <!-- Name - Last Name - Profession -->
+        <a href="index.html" title="Go to the Home page">
+        <div class="name">
+          <h1>Fabrizio Marras</h1>
+          <h2>designer & developer</h2>
+        </div>
+        <!-- Home icon for small screen -->
+        <div class="home-icon">
+          <i class="fas fa-home"></i><span class="sr-only">Home</span>
+        </div>
+        </a>
+      </div>
+      <!-- Navigation menu -->
+      <nav>
+        <input type="checkbox" id="nav" class="myfield hidden">
+        <label for="nav" class="nav-open">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <div class="nav-container">
+          <ul>
+            <li><a href="index.html" title="Home page">Home</a></li>
+            <li><a href="about.html" title="Check out my resume">About</a></li>
+            <li><a href="projects.html" title="Check out my projects">Projects</a></li>
+            <li><a class="current" title="Get in contact with me">Contact</a></li>
+          </ul>
+        </div>
+        <footer class="bottom">
+          <div class="contact-info">
+            <a href="mailto:info@fabriziomarras.com" title="send me an email"><i class="fas fa-envelope-square" aria-hidden="true"></i><span class="sr-only">email</span></a>
+            <a href="https://www.linkedin.com/in/fabriziomarras/" target="_blank" title="visit my LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+            <a href="https://www.youtube.com/channel/UCqXIyvZDCXhcYIKGtuYzQsg" target="_blank" title="visit my Youtube channel"><i class="fab fa-youtube-square"aria-hidden="true"></i><span class="sr-only">Youtube</span></a>
+            <a href="https://github.com/FabrizioMarras" target="_blank" title="visit my Github account"><i class="fab fa-github-square"></i><span class="sr-only">Twitter</span></a>
+          </div>
+        </footer>
+      </nav> <!-- .menu-desk -->
+    </div>
+  </header>
+
+  <!-- Contact Form section -->
+  <section id="form" class="page-top">
+    <h1 class="title">Get in contact!</h1>
+      <form class="form-container" method="post" action="mailto:info@fabriziomarras.com">
+        <ul>
+          <li><textarea class="form" name="name" rows="1">Name</textarea></li>
+          <li><textarea class="form" name="message" rows="10">Please, write here your message.</textarea></li>
+          <li><input class="form" type="submit" value="Send email"></li>
+        </ul>
+      </form>
+
+  </section>
+
+  <div class="contact-info footer">
+    <a href="mailto:info@fabriziomarras.com" title="send me an email"><i class="fas fa-envelope-square" aria-hidden="true"></i><span class="sr-only">email</span></a>
+    <a href="https://www.linkedin.com/in/fabriziomarras/" target="_blank" title="visit my LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+    <a href="https://www.youtube.com/channel/UCqXIyvZDCXhcYIKGtuYzQsg" target="_blank" title="visit my Youtube channel"><i class="fab fa-youtube-square"aria-hidden="true"></i><span class="sr-only">Youtube</span></a>
+    <a href="https://github.com/FabrizioMarras" target="_blank" title="visit my Github account"><i class="fab fa-github-square"></i><span class="sr-only">Twitter</span></a>
+  </div>
+<!-- JQUERY Scripts -->
+  <script type="text/javascript">
+
+  // Close the mobile menu when click an anchor menu link
+    // 1. on click on the link do something:
+    $( ".nav-container a" ).click(function() {
+    // 2. uncheck the navigation checkbox
+    $('#nav').prop( "checked", false );
+    });
+  </script>
+</body>
+</html>

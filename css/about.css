@@ -1,0 +1,124 @@
+/* Global */
+  .title {
+    color: #2EC4B6;
+    text-align: left;
+    margin: 0px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  .second-title {
+    color: #ED1C24;
+    text-align: left;
+    font-size: 1.2rem;
+    margin:0;
+  }
+  .subtitle {
+    text-transform: uppercase;
+    text-align: left;
+    color: #F7941E;
+    font-size: 1rem;
+    font-weight: normal;
+    margin:0;
+  }
+  .date {
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin:0;
+  }
+
+/* TOP section */
+#about {
+  color: #fff;
+  background: #222;
+  border-bottom: 1px solid #ED1C24;
+  min-height: 100vh;
+}
+  .aboutContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+  }
+  .AboutDescription {
+    min-height: 350px;
+    position: relative;
+  }
+    @media screen and (max-width: 964px) { 
+      .aboutContainer {
+        padding-top: 100px;
+      }
+      .AboutDescription {
+        height: auto;
+      }
+    }
+    @media screen and (max-width: 780px) { 
+      .aboutContainer {
+        height: auto;
+        flex-direction: column;
+      }
+    }
+  .nav-flex {
+    position absolute;
+    bottom: 0px;
+    left: 0;
+    right:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+    @media screen and (max-width: 964px) { 
+      .nav-flex {
+        margin-top: 20px;
+        position: static;
+      }
+    }
+    @media screen and (max-width: 500px) { 
+      .nav-flex {
+        flex-direction: column;
+      }
+    }
+  .btn-flex {
+    width: 150px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #2EC4B6;
+  }
+  .btn-flex:focus, .btn-felx:active {
+    Color: #fff;
+    border: 1px solid #fff;
+  }
+/* About Content */
+
+/* Work Experience */
+  .exp {
+    padding: 70px 40px;
+  }
+  .exp p {
+    text-align: justify;
+  }
+  #exp {
+    border-bottom: 1px solid red;
+  }
+  .exp a {
+    width:200px;
+    margin: 20px 0;
+  }
+  @media screen and (max-width: 500px) {
+    .exp a {
+    margin: 20px auto;
+    }
+
+  }
+/* Education */
+  #edu {
+    padding: 70px 40px;
+    background: #efefef;
+  }
+  .edu {
+    text-align: justify;
+  }
+  .edu h1 {
+    text-align: center;
+  }

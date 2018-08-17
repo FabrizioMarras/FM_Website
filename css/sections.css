@@ -1,0 +1,28 @@
+/* Page Layout */
+  section {
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  section:nth-child(2) {
+    padding-top: 5vh;
+    background: #222222;
+    min-height: 100vh;
+    border-bottom: 1px solid #2EC4B6;
+  }
+
+  section:nth-child(3) {
+    min-height: 100vh;
+    background: none;
+    margin: 0 auto;
+
+  }
+  section:nth-child(4) {
+    min-height: 100vh;
+    background: #222;
+    border-top: 1px solid #ED1C24;
+    border-bottom: 1px solid #ED1C24;
+  }
+  section:nth-child(5) {
+    min-height: 85vh;
+  }

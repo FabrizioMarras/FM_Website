@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Untitled</title>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<style>
+        .edgeLoad-EDGE-36316926 { visibility:hidden; }
+				/* Snakes and Ladders Game */
+				body {
+					min-height: 100vh;
+					border: 2px solid #2EC4B6;
+					text-align: justify;
+					margin: 40px;
+				}
+				a {
+					width: 250px;
+					/* position: absolute; */
+					bottom: 8px;
+					left:0;
+					right:0;
+				}
+				  .game-container {
+				    display: flex;
+				    flex-direction: row;
+				    justify-content:space-between;
+				    align-items: center;
+						padding: 0px 20px;
+				  }
+					.game-frame{
+						padding: 20px;
+					}
+					.game-frame h1 {
+						color: #ED1C24 !important;
+					}
+
+				  .rulesTitle {
+				    text-transform: uppercase;
+				    color: #F7941E;
+				    font-size: 1rem !important;
+				    margin-left: 30px;
+				  }
+				  ol {
+				    -webkit-padding-start: 10px;
+						-webkit-margin-before: 1em;
+    				-webkit-margin-after: 40px;
+    				-webkit-margin-start: 30px;
+    				-webkit-margin-end: 50px;
+				  }
+				  .rules li {
+				    margin: 0 20px 10px 20px;
+				    font-size: 0.8rem !important;
+				  }
+				  .game {
+				    width: 400px;
+				    margin: 0 auto;
+				  }
+				  .dice {
+				    margin-left: 25px;
+				    width: 350px;
+				    height: 100px;
+				  }
+				  .SandL {
+				    width: 400px;
+				    height: 420px;
+				  }
+
+    </style>
+<script>
+   AdobeEdge.loadComposition('Snakes%20and%20Ladders_EB2_P1', 'EDGE-36316926', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "600px",
+    width: "400px",
+    height: "413px"
+}, {dom: [ ]}, {dom: [ ]});
+</script>
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body>
+	<div class="game-frame">
+		<h1>Snakes and Ladders</h1>
+		<p>The game is for 2 to 6 players - also one player can play alone - in presence of the teacher. The winner is the player who reaches first the Finish tile and answer correclty the final question chosen by the teacher.</p>
+			<div class="game-container">
+				<div class="rules-container">
+						<ol class="rules">
+							<div class="rules-flex">
+								<p class="rulesTitle">Game Rules</p>
+								<li>Pick a colored horse piece.</li>
+								<li>Push the "Roll" button to start rolling the dice, then push the "Stop" button to stop the dice from rolling.</li>
+								<li>Move your horse piece of as many tiles as indicated by the number on the dice.</li>
+								<li>If you reach a tile where a "ladder" is present (tile #2 and tile #7), advance your horse piece to the connected tile (tile #6 or tile #11 respectively). If you reach a tile where a "snake head" is present (tile #8 and tile #12), move your horse piece back to the connected tile (tile #1 or tile #5 respectivey).</li>
+							</div>
+							<div class="rules-flex">
+								<li>Click on the tile where your horse piece arrived.</li>
+								<li>Answer the question appearing in the pop-up window, then press continue.</li>
+								<li>If you give the correct Answer, you can roll the dice again, else the turn pass to the next player.</li>
+								<li>Wins who arrives first to the FINISH tile and answers correctly to the final question.</li>
+							</div>
+						</ol>
+				</div>
+				 <div class="game">
+				<iframe style="margin: 30px; margin-bottom: -10px; border: none;" class="dice" src="../Die/Die/Die.html" name="Rolling Dice for the Game"></iframe>
+				<div id="Stage" style="margin: 10px;" class="EDGE-36316926">
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="btn" href="../Speak2Lead.html">back to project</a></p>
+</body>
+</html>
