@@ -340,19 +340,19 @@
       border: 1px solid #ED1C24;
       }
       .current {
-        color: #fff; /* gives colour to the button text */
-        background: #ED1C24;
+        color: #ED1C24; /* gives colour to the button text */
+        background: none;
         border: 1px solid #ED1C24;
       }
       .current:hover {
-        color: #fff; /* gives colour to the button text */
-        background: #ED1C24;
+        color: #ED1C24; /* gives colour to the button text */
+        background: none;
         border: 1px solid #ED1C24;
         cursor: default;
       }
       .current:active, .current:focus {
-        color: #fff; /* gives colour to the button text */
-        background: #ED1C24;
+        color: #ED1C24; /* gives colour to the button text */
+        background: none;
         border: 1px solid #ED1C24;
         font-weight: lighter;
         cursor: default;
