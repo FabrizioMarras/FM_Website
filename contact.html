@@ -76,8 +76,9 @@
     <h1 class="title">Get in contact!</h1>
       <form class="form-container" method="post" action="mailto:info@fabriziomarras.com">
         <ul>
-          <li><textarea class="form" name="name" rows="1">Name</textarea></li>
-          <li><textarea class="form" name="message" rows="10">Please, write here your message.</textarea></li>
+          <li><input class="form" type="text" name="name" rows="1" required placeholder="Name" onfocus="this.value=''"></li>
+          <li><input class="form" type="email" name="email" rows="1"  placeholder="Email" required onfocus="this.value=''"></li>
+          <li><textarea class="form" type="text" name="message" rows="10" required placeholder="Please, write here your message." onfocus="this.value=''"></textarea></li>
           <li><input class="form" type="submit" value="Send email"></li>
         </ul>
       </form>

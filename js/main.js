@@ -8,7 +8,6 @@ function init() {
 // CREATE 01 - Scene
   var scene = new THREE.Scene(); // create the scene.
 
-
 // 3D Objects
 // 3D Logo
 
@@ -41,12 +40,12 @@ function init() {
   pointLight01.position.x = 1500;
   pointLight01.position.y = -1500;
   pointLight01.position.z = -800;
-  pointLight01.intensity = 3;
+  pointLight01.intensity = 2.5;
 // POINTLIGHT 01.
   pointLight02.position.x = -1500;
   pointLight02.position.y = 1500;
   pointLight02.position.z = 800;
-  pointLight02.intensity = 3;
+  pointLight02.intensity = 2.5;
 
 
 // adding the lights to the scene
