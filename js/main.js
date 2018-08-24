@@ -60,7 +60,9 @@ function init() {
   camera.lookAt(mtlLoader); // the object is centered in the middle of the screen.
 
 // CREATE 03 - the RENDERER
-  var renderer = new THREE.WebGLRenderer();
+  var renderer = new THREE.WebGLRenderer({
+    antialias: true ; // set the antialias On for reducing jagged lines
+  });
   // ADD SHADOWS 01 - enabling the shadows in the RENDERER
   renderer.shadowMap.enabled = true;
   renderer.setSize( window.innerWidth, window.innerHeight );// set the size of the 3D environment.
